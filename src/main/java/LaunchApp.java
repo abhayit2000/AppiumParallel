@@ -16,16 +16,6 @@ public class LaunchApp {
         };
     }
 
-//    @AfterMethod
-//    public void tearDown() {
-//        System.out.println("Quitting driver ");
-//        try {
-//            driver.quit();
-//        } catch (Exception e) {
-//            System.out.println("Failed to quit driver");
-//        }
-//    }
-
     @Test(dataProvider = "devices", invocationCount = 2)
     public void LaunchApp(String deviceName, String udid) throws MalformedURLException {
         System.out.println("Running on [" + deviceName + "] with udid: [" + udid + "]");
