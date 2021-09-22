@@ -7,7 +7,7 @@ public class DriverFactory {
     protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
 
     public static void setDriver(DesiredCapabilities caps) throws MalformedURLException {
-        driver.set(new RemoteWebDriver(Helper.getWebdriverUrl("513e2708a80d4ccf9724d055ee5a6899"), caps));
+        driver.set(new RemoteWebDriver(Helper.getWebdriverUrl("YOUR_HEADSPIN_ API_TOKEN_HERE"), caps));
     }
 
     public static RemoteWebDriver getDriver() {
